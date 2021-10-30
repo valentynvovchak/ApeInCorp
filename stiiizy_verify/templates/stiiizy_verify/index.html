@@ -1,0 +1,100 @@
+<!doctype html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>verify STIIIZY</title>
+
+    <link rel="stylesheet" href="{% static 'css/discard_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e3a0b6df06.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <div class="verify" id="verify">
+                <div class="logo_verify_block__area">
+
+                    <a href="#" class="header_logo">
+                        <img class="header__logo" src="https://cdn.shopify.com/s/files/1/2426/0015/t/35/assets/stiizy-popup-logo.png?8286" alt="logo">
+                    </a>
+
+                </div>
+                <div class="verify__block">
+                    <img class="verify__img" src="https://cdn.shopify.com/s/files/1/2426/0015/files/unnamed.jpg?v=1615904434" alt="shield_ok">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section section-60">
+        <div class="container">
+            <div class="verify__input_area">
+            {% csrf_token %}
+                <form id="verify_form" action="{% url 'homepage' %}" method="GET" enctype="multipart/form-data">
+
+                    <label class="verify__input_label" for="verify_input">Enter serial number.</label>
+                    <input type="text" id="verify_input" placeholder="Serial Number" name="serial" value="{% if qr %}{{ qr }}{% else %}{% endif %}">
+                    <button id="verify__submit_button" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-60">
+        <div class="container">
+            <div id="report">
+
+
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <p style="color: #69727b;">Here we show you the steps to identify the authenticity of our products.</p>
+
+        <div class="tutorial">
+            <div class="tutorial__item">
+                <img class="tutorial__item__img" src="https://cdn.shopify.com/s/files/1/2426/0015/t/35/assets/step1-img.jpg?8286" alt="step 1">
+                <div class="tutorial__item__title">Step 1</div>
+                <p class="tutorial__item__description">Scan the QR code. This will lead you to STIIIZY verifier.</p>
+            </div>
+            <div class="tutorial__item">
+                <img class="tutorial__item__img" src="https://cdn.shopify.com/s/files/1/2426/0015/t/35/assets/step2-img.jpg?8286" alt="step 1">
+                <div class="tutorial__item__title">Step 2</div>
+                <p class="tutorial__item__description">Enter the serial code on your STIIIZY product.</p>
+            </div>
+            <div class="tutorial__item">
+                <img class="tutorial__item__img" src="https://cdn.shopify.com/s/files/1/2426/0015/t/35/assets/step3-img_1.jpg?8286" alt="step 1">
+                <div class="tutorial__item__title">Step 3</div>
+                <p class="tutorial__item__description">The result of your authentication will be displayed under the form field.</p>
+            </div>
+            <div class="tutorial__item">
+                <img class="tutorial__item__img" src="https://cdn.shopify.com/s/files/1/2426/0015/t/35/assets/step4-img.jpg?8286" alt="step 1">
+                <div class="tutorial__item__title">Step 4</div>
+                <p class="tutorial__item__description">Enjoy your verified STIIIZY product!</p>
+            </div>
+        </div>
+
+        <p style="color: #69727b;">For further information or if you have any questions please do not hesitate <br> to contact us.</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/ajax_post.js' %}"></script>
+</body>
+</html>

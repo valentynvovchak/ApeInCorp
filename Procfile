@@ -1,0 +1,1 @@
+web: gunicorn stiiizy.wsgi --log-file -

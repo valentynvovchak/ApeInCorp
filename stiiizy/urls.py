@@ -1,4 +1,4 @@
-"""calypso URL Configuration
+""" URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -19,8 +19,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin12w9071g083905dw3209vfef72f00vsdv865s43df3gg0/', admin.site.urls),
-    path('', include('calypso_verify.urls')),
+    path('admin/', admin.site.urls),
+    path('', include('stiiizy_verify.urls')),
 ]
 
 if settings.DEBUG:

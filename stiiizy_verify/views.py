@@ -6,7 +6,7 @@ from django.utils import timezone
 from django.views import View
 from django.views.generic import TemplateView
 
-from calypso_verify.models import QR
+from stiiizy_verify.models import QR
 
 ICON = {
     'SUCCESS': {'class': 'fa-check-circle', 'color': '#4fb360'},
@@ -16,18 +16,21 @@ ICON = {
 
 
 class IndexView(TemplateView):
-    template_name = 'calypso_verify/index.html'
+    template_name = 'stiiizy_verify/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        if self.request.GET.get('serial'):
-            context['serial'] = self.request.GET.get('serial')
+        if self.request.GET.get('qr'):
+
+            context['qr'] = self.request.GET.get('qr')
 
         return context
 
     def post(self, request, *args, **kwargs):
         if request.is_ajax():
             serial = request.POST.get('serial')
+            if serial:
+                serial = str(serial).strip()
 
             qr = QR.objects.filter(serial=serial).first()
 
@@ -44,7 +47,7 @@ class IndexView(TemplateView):
 
                 else:
                     answer['status'] = 'WARNING'
-                    answer['first_verified'] = qr.first_verified.strftime("%d %B, %Y at %H:%M:%S")
+                    answer['first_verified'] = qr.first_verified.strftime("%Y-%m-%d at %H:%M %p")
                     answer['verifications'] = qr.verifications
                     if qr.verifications > 99:
                         answer['status'] = 'DANGER'

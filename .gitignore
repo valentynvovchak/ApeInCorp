@@ -2,7 +2,12 @@
 .idea
 venv
 */__pycache/*
-calypso_verify/__pycache__/
-calypso_verify/migrations/__pycache__/*
-calypso/__pycache__/
+stiiizy_verify/__pycache__/
+stiiizy_verify/migrations/__pycache__/*
+stiiizy/__pycache__/
+
+db.sqlite3
+stiiizy_verify/migrations/*
+stiiizy_verify/static/admin/
+stiiizy_verify/static/import_export/
 
