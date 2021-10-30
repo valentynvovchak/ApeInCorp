@@ -7,7 +7,6 @@ stiiizy_verify/migrations/__pycache__/*
 stiiizy/__pycache__/
 
 db.sqlite3
-stiiizy_verify/migrations/*
 stiiizy_verify/static/admin/
 stiiizy_verify/static/import_export/
 
