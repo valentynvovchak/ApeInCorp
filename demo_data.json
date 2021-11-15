@@ -1,0 +1,669 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$cZLZAXhCSj12$nO2DAS5RcExSg6IxiKwgWDiLU6gOM185vrmLxjyoIJg=",
+        "last_login": "2021-11-11T14:11:15.435Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-10-30T13:08:47.194Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "dzrf0r8xwzdaybrmc2xxyq04o1f67gi5",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSG8CjMu3fsNBBiQqoGktCvjv2uTLnR7zzn3xXzY1uq3kRc_EzszyU6_WwzpkdsO6B7arfPU27rMke8KP-jg1075eTncv4MaRv3WyhA6sM5hsmizMEpHdGSsKKUARV0UgASDCpXEAIlk1jYATaVMQhr2_gC9xjcR:1mlAnL:TdCy5EQAxOQV_xlh5y_bEfCI0eXJdyvKzf2H7na0T8Q",
+        "expire_date": "2021-11-25T14:11:15.438Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ftxefgk9geurwrlz1tgcd9ecelbyvhyo",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAURO_C2hCxQP936d4zkAF-pGogKe3KeHdt0oVu5703LxWwLiWsXeYwZXVWRh1-t4j0kLqBfEe9NZ1aXeYp6k3RO-362rI8L7v7d1DQy7f2LMnY5Nkigj1Z64jhKGc-ekGCAQ9CzjqTRwgGw4Mnf4pwzCMZ9f4A3fE3Yw:1mgo6e:SWEVJB4XHC8EwnTXznrMQhxI0KGYqkN8oL9lIrn3kHI",
+        "expire_date": "2021-11-13T13:09:08.163Z"
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 1,
+    "fields": {
+        "serial": "123",
+        "verifications": 186,
+        "created_at": "2021-11-15T12:26:46.284Z",
+        "first_verified": "2021-11-11T14:12:25.327Z"
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 2,
+    "fields": {
+        "serial": "1234",
+        "verifications": 105,
+        "created_at": "2021-11-11T15:43:07.316Z",
+        "first_verified": "2021-11-11T14:14:12.591Z"
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 23,
+    "fields": {
+        "serial": "65464",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.453Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 24,
+    "fields": {
+        "serial": "546456",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.456Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 25,
+    "fields": {
+        "serial": "333",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.457Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 26,
+    "fields": {
+        "serial": "4444444",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.459Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 27,
+    "fields": {
+        "serial": "5555555",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.462Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 28,
+    "fields": {
+        "serial": "9878978978",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.464Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 29,
+    "fields": {
+        "serial": "122323",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.467Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 30,
+    "fields": {
+        "serial": "233234",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.470Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 31,
+    "fields": {
+        "serial": "4664665",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.472Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 32,
+    "fields": {
+        "serial": "vvv4546",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.474Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 33,
+    "fields": {
+        "serial": "4-6453634",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.476Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 34,
+    "fields": {
+        "serial": "3453456",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.478Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 35,
+    "fields": {
+        "serial": "54656555",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.480Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 36,
+    "fields": {
+        "serial": "678976969",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.481Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 37,
+    "fields": {
+        "serial": "7897867",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.483Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 38,
+    "fields": {
+        "serial": "32434",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.485Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 39,
+    "fields": {
+        "serial": "21321",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.487Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 40,
+    "fields": {
+        "serial": "54765868",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.489Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 41,
+    "fields": {
+        "serial": "870870780",
+        "verifications": 0,
+        "created_at": "2021-11-11T15:44:58.491Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 42,
+    "fields": {
+        "serial": "2132133243",
+        "verifications": 146,
+        "created_at": "2021-11-11T16:50:35.135Z",
+        "first_verified": "2021-11-11T15:45:10.353Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-11-11T14:11:44.464Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "1",
+        "object_repr": "123",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-11-11T14:11:46.390Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "1",
+        "object_repr": "123",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-11-11T14:11:50.200Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "2",
+        "object_repr": "1234",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.500Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "23",
+        "object_repr": "65464",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.502Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "24",
+        "object_repr": "546456",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.504Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "25",
+        "object_repr": "333",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.507Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "26",
+        "object_repr": "4444444",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.509Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "27",
+        "object_repr": "5555555",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.510Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "28",
+        "object_repr": "9878978978",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.512Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "29",
+        "object_repr": "122323",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.514Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "30",
+        "object_repr": "233234",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.516Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "31",
+        "object_repr": "4664665",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.518Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "32",
+        "object_repr": "vvv4546",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.519Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "33",
+        "object_repr": "4-6453634",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.521Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "34",
+        "object_repr": "3453456",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.522Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "35",
+        "object_repr": "54656555",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.524Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "36",
+        "object_repr": "678976969",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.526Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "37",
+        "object_repr": "7897867",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.527Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "38",
+        "object_repr": "32434",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.529Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "39",
+        "object_repr": "21321",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.530Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "40",
+        "object_repr": "54765868",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.532Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "41",
+        "object_repr": "870870780",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2021-11-11T15:44:58.536Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "apeincorp_verify",
+            "qr"
+        ],
+        "object_id": "42",
+        "object_repr": "2132133243",
+        "action_flag": 1,
+        "change_message": "new through import_export"
+    }
+}
+]
