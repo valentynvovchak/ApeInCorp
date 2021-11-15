@@ -2,11 +2,12 @@
 .idea
 venv
 */__pycache/*
-stiiizy_verify/__pycache__/
-stiiizy_verify/migrations/__pycache__/*
-stiiizy/__pycache__/
+apeincorp_verify/__pycache__/
+apeincorp_verify/migrations/__pycache__/*
+apeincorp/__pycache__/
 
 db.sqlite3
-stiiizy_verify/static/admin/
-stiiizy_verify/static/import_export/
+apeincorp_verify/static/admin/
+apeincorp_verify/static/import_export/
 
+media/

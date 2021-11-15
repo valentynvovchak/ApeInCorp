@@ -20,12 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY_APE')
+# SECRET_KEY = "^j+u0uh%w0*asq_^cna7c8$^rvhlgvc$w6qns_+au7_1536o7n"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost', 'stiiizy-verify.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost', 'apeincorp-verify.herokuapp.com']
 
 
 # Application definition
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Custom
-    'stiiizy_verify.apps.StiiizyVerifyConfig',
+    'apeincorp_verify.apps.ApeincorpVerifyConfig',
     'import_export',
 ]
 
@@ -56,12 +57,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'stiiizy.urls'
+ROOT_URLCONF = 'apeincorp.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'stiiizy_verify/templates'],
+        'DIRS': [BASE_DIR / 'apeincorp_verify/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,13 +70,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'stiiizy.context_processors.portal_processor',
+                'apeincorp.context_processors.portal_processor',
             ],
         },
     },
 ]
 
-WSGI_APPLICATION = 'stiiizy.wsgi.application'
+WSGI_APPLICATION = 'apeincorp.wsgi.application'
 
 
 # Database
@@ -83,13 +84,9 @@ WSGI_APPLICATION = 'stiiizy.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'stiiizy_db',
+        'NAME': 'apeincorp_db',
         'USER': 'fish_user',
         'PASSWORD': '131101',
         'HOST': 'localhost',
@@ -140,7 +137,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'stiiizy_verify/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'apeincorp_verify/static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -1,10 +1,10 @@
 
 /* BODY */
 body {
-	margin: 5% auto;
+	margin: 5% auto 0 auto;
 	text-align: center;
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 	line-height: 1.6;
 	/*color: #333333;*/
 	/*background: url("../../../media/5e4d5b368037e50022ba8ddf_optimized_1920.webp") center fixed no-repeat;*/
@@ -24,7 +24,7 @@ body {
 /* Container */
 .container {
 	width: 100%;
-	max-width: 830px;
+	max-width: 1300px;
 	/*border: 1px solid red;*/
 	/*min-width: 1230px;*/
 	margin: 0 auto; /*вирівн. по центру*/
@@ -34,7 +34,7 @@ body {
 /* Section */
 .section{
 	/*height: 282px;*/
-	margin-top: 152px;
+	margin-top: 50px;
 	position: relative;
 }
 
@@ -71,16 +71,17 @@ body {
 	align-items: center;
 }
 
-.header__logo {
-	/*position: absolute;*/
-	/*top: 50%;*/
-	/*left: 50%;*/
-	/*transform: translate3d(-50%, -50%, 0);*/
+.verify_here_img {
+	position: absolute;
+	top: 3em;
+	right: 3em;
+	z-index: 1;
+}
 
-	/*margin: 30px 0;*/
-	margin-top: 28px;
-	margin-left: 30px;
-	width: 219px;
+.header__logo {
+	/*margin-top: 28px;*/
+	/*margin-left: 30px;*/
+	width: 823px;
 	height: auto;
 }
 
@@ -137,7 +138,7 @@ body {
 /* VERIFY */
 .verify {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .verify__block {
@@ -181,22 +182,24 @@ body {
 	display: block;
 	color: #69727b;
 	/*font-family: 'BenchNine', sans-serif;*/
-	font-size: 14px;
+	font-size: 18px;
+	letter-spacing: 0.4px;
 }
 
 #verify_input {
+	letter-spacing: 0.4px;
 	margin-right: -7px;
 
 	vertical-align: middle;
 	text-decoration: none;
 	outline: none;
-	height: 36px;
-	border: 1px solid #a9a9a9;
+	height: 46px;
+	border: 3px solid #fecf3b;
 	border-right: none;
-	width: 225px;
+	width: 280px;
 	padding: 8px 12px;
-    border-radius: 8px 0 0 8px;
-	font-size: 14px;
+    border-radius: 25px 0 0 25px;
+	font-size: 17px;
 	/*text-align: center;*/
 	display: inline-block;
 }
@@ -219,22 +222,50 @@ body {
 #verify__submit_button{
 	vertical-align: middle;
 	display: inline-block;
-	font-size: 14px;
-	width: 130px;
-	height: 36px;
+	font-size: 18px;
+	width: 165px;
+	height: 46px;
 	padding: 0 5px 2px;
-	background: #228b22;
+	background: #FECF3B;
 	/*background: #e6b635;*/
-	border: 1px solid #228b22;
-	border-radius: 0 8px 8px 0;
+	border: 1px solid #FECF3B;
+	border-radius: 0 25px 25px 0;
+	color: black;
+}
+/*#verify_input:focus {*/
+/*	border: 1px solid black;*/
+/*}*/
+
+.back_to {
+	font-size: 29px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+
+	transform: translate3d(-50%, -50%, 0);
+}
+.back_to_a:hover {
 	color: white;
 }
-#verify_input:focus {
-	border: 1px solid black;
+
+.back_to_a {
+	border-radius: 26px;
+	position: absolute;
+	top: 3em;
+	left: 3em;
+	z-index: 1;
+	color: black;
+	text-decoration: none;
+	display: block;
+	width: 61px;
+	height: 42px;
+	background-color: #FECF3B;
 }
 
 #verify_input::placeholder {
   	color: #717171;
+	font-size: 17px;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -283,7 +314,7 @@ body {
 
 #verify__submit_button:hover {
 	cursor: pointer;
-	background-color: #222222;
+	color: white;
 }
 /* Nav toggle */
 
@@ -370,134 +401,126 @@ body {
 }
 
 .tutorial__item__img {
+	width: 130px;
 	position: absolute;
 	top: 5%;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 1;
-	border: 3px solid #bbbbbb;
+	/*border: 3px solid #bbbbbb;*/
 	margin-bottom: 10px;
 }
 
 .tutorial__item__title {
-	padding-top: 110px;
+	padding-top: 155px;
 	font-weight: bold;
 	margin-bottom: 8px;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .tutorial__item {
-	height: 210px;
-	width: 200px;
+	height: 270px;
+	width: 300px;
 	position: relative;
 	padding: 10px;
 }
 
 .tutorial__item__description {
 	color: #69727b;
-	line-height: 1;
+	font-size: 17px;
+	line-height: 1.3;
 }
 /* MEDIA AREA */
 
-/*@media (max-width: 1235px) { !*Монітори*!
+@media (max-width: 1400px) { /*Монітори*/
 
-	!* SECTION *!
-	.section {
-		margin-top: 170px;
-	}
-	.section-80 {
-		margin-top: 60px;
-	}
-}*/
-
-
-/*@media (max-width: 990px) { !*Планшети Ландскейп*!
-
-	!* HEADER *!
-	.header__go_back {
-		display: none;
-	}
-	.header__go_back.active {
-		display: block;
-		position: absolute;
-		!*top: 100%;*!
-		top: 8%;
-		left: 50%;
-		z-index: 100000;
-		transform: translateX(-50%);
-		width: 380px;
-		height: 48px;
-		!*margin-top: 30px;*!
-		!*border: 1px solid crimson;*!
+	.header__logo {
+		width: 660px;
 	}
 
-	.header__go_back_block {
-		display: none;
-
-		!*width: 100vw;*!
-		height: 100vh;
-		width: 100%;
-		position: absolute;
-		top: 100%;
-		z-index: 200000;
-
-		margin: -15px;
+	.verify_here_img {
+		width: 160px;
+		top: 1em;
+		right: 1em;
 	}
 
-	#nav-toggle {
-		display: block;
+	.back_to_a {
+		top: 1em;
+		right: 1em;
+	}
+}
+
+
+@media (max-width: 1235px) { /*Монітори*/
+
+	.header__logo {
+		padding: 0 0 0 150px;
+		width: 80%;
+	}
+}
+
+
+@media (max-width: 990px) { /* Планшети Ландскейп */
+	.header__logo {
+		width: 80%;
 	}
 
-
-	!* VERIFY *!
-	.verify {
-		height: 550px;
-		justify-content: space-around;
-		!*margin-top: 100px;*!
-		flex-direction: column-reverse;
-		!*flex-wrap: wrap;*!
-		align-items: center;
+	.verify_here_img {
+		width: 140px;
 	}
 
-	.verify__input_area {
-		width: 100%;
-	}
-
-	.verify__leaves {
-		margin: 0 auto;
-    	width: 400px;
-    	height: auto;
-	}
-
-	#verify__submit_button {
-		width: 92px;
-	}
-
-	!*#verify_form {*!
-	!*	margin-top: 150px;*!
-	!*}*!
-
-	!* SECTION *!
-	.section {
-		margin-top: 60px;
-	}
-
-}*/
+}
 
 
 @media (max-width: 770px) { /*Портретна*/
 
 	.tutorial__item {
-		width: 33.333%;
+		width: 50%;
 	}
 
 	.header__logo {
-		width: 173px;
+		width: 420px;
+		padding: 30px 0 0 0;
 	}
 
-	.verify__img {
-		width: 173px;
+	.back_to {
+		font-size: 21px;
 	}
+
+	.back_to_a {
+		position: fixed;
+		width: 50px;
+		height: 37px;
+		top: 1em;
+		left: 0.9em;
+	}
+
+	.verify_here_img {
+		width: 90px;
+	}
+
+	#verify_input {
+		width: 230px;
+	}
+
+	#verify__submit_button {
+		width: 120px;
+	}
+
+	.tutorial__item__img {
+		width: 110px;
+	}
+
+	.tutorial__item__title {
+		padding-top: 130px;
+	}
+
+	.verify_here_img {
+		width: 110px;
+	}
+	/*.verify__img {*/
+	/*	width: 173px;*/
+	/*}*/
 
 	body {
 			margin: 2% auto;
@@ -506,45 +529,59 @@ body {
 		margin-top: 80px;
 	}
 
+	.bottom {
+		padding-top: 20px;
+	}
+
 }
 
 
 @media (max-width: 575px) { /*Мобільні*/
-	.tutorial__item {
-		width: 50%;
-		padding-bottom: 0;
-		height: 194px;
+	.back_to_a {
+		top: 1em;
+		left: 0.6em;
+	}
+
+	.verify_here_img {
+		width: 145px;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	.header__logo {
+		padding: 70px 0 0 0;
 	}
 
 }
 
 @media (max-width: 500px) { /*Мобільні*/
+	.back_to_a {
+		position: fixed;
+		width: 40px;
+		height: 28px;
+		top: 1em;
+		left: 0.9em;
+	}
 
 	.header__logo {
-		width: 130px;
+		padding: 50px 0 0 0;
 	}
-
-	.verify__img {
-		width: 130px;
-	}
-
 }
 
 @media (max-width: 400px) { /*Мобільні*/
 
-	.header__logo {
-		width: 100px;
-	}
+	/*.header__logo {*/
+	/*	width: 100px;*/
+	/*}*/
 
-	.verify__img {
-		width: 100px;
-	}
+	/*.verify__img {*/
+	/*	width: 100px;*/
+	/*}*/
 
 	#verify_input {
 		width: 190px;
 	}
 	#verify__submit_button {
-		width: 105px;
+		width: 95px;
 	}
 
 }

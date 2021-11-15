@@ -1,1 +1,1 @@
-web: gunicorn stiiizy.wsgi --log-file -
+web: gunicorn apeincorp.wsgi --log-file -

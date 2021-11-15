@@ -6,7 +6,7 @@ from django.utils import timezone
 from django.views import View
 from django.views.generic import TemplateView
 
-from stiiizy_verify.models import QR
+from apeincorp_verify.models import QR
 
 ICON = {
     'SUCCESS': {'class': 'fa-check-circle', 'color': '#4fb360'},
@@ -16,7 +16,7 @@ ICON = {
 
 
 class IndexView(TemplateView):
-    template_name = 'stiiizy_verify/index.html'
+    template_name = 'apeincorp_verify/test.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

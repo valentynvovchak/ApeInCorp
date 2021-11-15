@@ -5,7 +5,7 @@ from import_export import resources
 from import_export import fields
 from import_export.widgets import ForeignKeyWidget
 
-from stiiizy_verify.models import QR
+from apeincorp_verify.models import QR
 
 
 class SerialResource(resources.ModelResource):
