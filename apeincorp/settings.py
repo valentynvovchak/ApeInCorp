@@ -24,7 +24,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY_APE')
 # SECRET_KEY = "^j+u0uh%w0*asq_^cna7c8$^rvhlgvc$w6qns_+au7_1536o7n"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost', 'apeincorp-verify.herokuapp.com']
 
