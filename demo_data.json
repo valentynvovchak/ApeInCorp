@@ -17,6 +17,23 @@
     }
 },
 {
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$iakwqNLsQvpe$gchxMz3qIbkexATLegz+cHZZTeQAmg5fQq3Z+REkqws=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "apeincorp",
+        "first_name": "",
+        "last_name": "",
+        "email": "apeincorp@aol.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-11-16T13:51:39.282Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
     "model": "sessions.session",
     "pk": "dzrf0r8xwzdaybrmc2xxyq04o1f67gi5",
     "fields": {
