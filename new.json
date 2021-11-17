@@ -1,0 +1,22 @@
+[
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 41243,
+    "fields": {
+        "serial": "1",
+        "verifications": 0,
+        "created_at": "2021-11-17T18:01:50.228Z",
+        "first_verified": null
+    }
+},
+{
+    "model": "apeincorp_verify.qr",
+    "pk": 41244,
+    "fields": {
+        "serial": "4709728363205630000",
+        "verifications": 0,
+        "created_at": "2021-11-17T18:02:20.976Z",
+        "first_verified": null
+    }
+}
+]

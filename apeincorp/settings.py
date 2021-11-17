@@ -21,13 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = os.environ.get('SECRET_KEY_APE')
-# SECRET_KEY = "^j+u0uh%w0*asq_^cna7c8$^rvhlgvc$w6qns_+au7_1536o7n"
+# SECRET_KEY = os.environ.get('SECRET_KEY_APE')
+SECRET_KEY = "^j+u0uh%w0*asq_^cna7c8$^rvhlgvc$w6qns_+au7_1536o7n"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
-# DEBUG = True
+# DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost', 'apeincorp-verify.herokuapp.com', 'verify.apeincorp.com']
 
