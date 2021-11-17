@@ -42,13 +42,13 @@ class IndexView(TemplateView):
                 if not qr.first_verified:
                     answer['status'] = 'SUCCESS'
                     answer['first_verified'] = ''
-                    answer['verifications'] = 0
+                    answer['verifications'] = 1
                     qr.first_verified = timezone.now()
 
                 else:
                     answer['status'] = 'WARNING'
                     answer['first_verified'] = qr.first_verified.strftime("%Y-%m-%d at %H:%M %p")
-                    answer['verifications'] = qr.verifications
+                    answer['verifications'] = qr.verifications + 1
                     if qr.verifications > 99:
                         answer['status'] = 'DANGER'
 
