@@ -17,15 +17,15 @@ function sendAjax(){
         // alert(data['serial']);
         let result;
         if (data['first_verified'] && data['found']){
-            result = `<span style="color: #f8ba00;font-size: 18px;">Your product has already been verified. It Was First Verified On</span>  <br>&nbsp; <span style="color: #69727b;">${data['first_verified']}</span>. <br> <span style="color: #f8ba00;">And has been verified &nbsp;<span><span ${data['status'] === 'DANGER' ? 'style="color: #69727b;"' : 'style="color: #69727b;"'}><br>${data['verifications']}</span> <br> <span style="color: #f8ba00;">Times.<span${data['status'] === 'DANGER' ? '' : ''}<br><br>`
+            result = `<span style="color: #008000;font-size: 18px;">Your product has already been verified. It Was First Verified On</span>  <br>&nbsp; <span style="color: #69727b;">${data['first_verified']}</span>. <br> <span style="color: #008000;">And has been verified &nbsp;<span><span ${data['status'] === 'DANGER' ? 'style="color: #69727b;"' : 'style="color: #69727b;"'}><br>${data['verifications']}</span> <br> <span style="color: #008000;">Times.<span${data['status'] === 'DANGER' ? '' : ''}<br><br>`
         } else if(!data['found']){
             result = `<span style="color: red;font-size: 18px;">Your Serial Code Is Invalid</span><br><br>`
         } else {
-            result = `<span style="color: #f8ba00;font-size: 18px;">Your product has not been verified yet. You are the first.<br> You can be sure that your product is original.</span> <br><br>`
+            result = `<span style="color: #008000;font-size: 18px;">Your product has not been verified yet. You are the first.<br> You can be sure that your product is original.</span> <br><br>`
         }
         let sp = "";
         if (data['found']){
-            sp = "<span style=\"font-size: 18px;;line-height: 0.3; color: #f8ba00;\">If this is your first time checking the authenticity of your product and the result is showing greater than 1 there is a chance your product may not be authentic.<br> Please contact the retailer where you purchased your product for further information.</span>";
+            sp = "<span style=\"font-size: 18px;;line-height: 0.3; color: #008000;\">If this is your first time checking the authenticity of your product and the result is showing greater than 1 there is a chance your product may not be authentic.<br> Please contact the retailer where you purchased your product for further information.</span>";
         }
 
         $('#report').html(`
