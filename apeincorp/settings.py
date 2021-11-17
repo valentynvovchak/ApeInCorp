@@ -86,7 +86,8 @@ WSGI_APPLICATION = 'apeincorp.wsgi.application'
 
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
+#                                     LOCAL POSTGRES
+DATABASES = {                                                  # to recover
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'apeincorp_db',
@@ -100,8 +101,23 @@ DATABASES = {
 # Update DB
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
+DATABASES['default'].update(db_from_env)                       # to recover
 
+
+#                                         HEROKU POSTGRES LOCAL
+# import dj_database_url
+# DATABASES = {
+#     'default': {
+#
+#     }
+# }
+# DATABASES['default'].update(
+#     dj_database_url.config(
+#         default="postgres://neroiwzvpxlbon:8c469af0d1e0ee9d7f0481ee1b12d063e37dbd723f37849075c4c7ce670bc8e3@ec2-54-156-24-159.compute-1.amazonaws.com:5432/d5kjq4gi9co28p",
+#         conn_max_age=600,
+#         ssl_require=True
+#     )
+# )
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
