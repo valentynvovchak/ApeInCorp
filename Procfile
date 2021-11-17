@@ -1,1 +1,1 @@
-web: gunicorn --timeout 90 apeincorp.wsgi --log-file -
+web: gunicorn apeincorp.wsgi --timeout 90 --keep-alive 45 --log-file -
