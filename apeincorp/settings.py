@@ -31,7 +31,7 @@ except Exception:
     DEBUG = True
 
 if DEBUG:
-    SECRET_KEY = "^j+u0uh%w0*asq_^cna7c8$^rvhlgvc$w6qns_+au7_1536o7n"
+    SECRET_KEY = ""
 else:
     SECRET_KEY = os.environ.get('SECRET_KEY_APE')
 
