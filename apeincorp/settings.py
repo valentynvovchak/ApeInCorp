@@ -124,7 +124,7 @@ DATABASES['default'].update(db_from_env)                       # to recover
 # }
 # DATABASES['default'].update(
 #     dj_database_url.config(
-#         default="postgres://neroiwzvpxlbon:8c469af0d1e0ee9d7f0481ee1b12d063e37dbd723f37849075c4c7ce670bc8e3@ec2-54-156-24-159.compute-1.amazonaws.com:5432/d5kjq4gi9co28p",
+#         default="",
 #         conn_max_age=600,
 #         ssl_require=True
 #     )
