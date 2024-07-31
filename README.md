@@ -1,5 +1,5 @@
 # ApeInCorp
-This is a commercial project on counterfeit verification via QR codes.
+A commercial project on counterfeit verification via QR codes.
 
 
 ![view](https://github.com/valentynvovchak/ApeInCorp/blob/main/view_ape_desktop.png?raw=true)
