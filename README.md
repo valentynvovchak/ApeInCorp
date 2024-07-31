@@ -1,5 +1,5 @@
 # ApeInCorp
-This is a real commercial project on counterfeit verification via QR codes, similar to calypso. It was created for an American company apeincorp.com . All the secret keys and passwords are hidden.
+This is a commercial project on counterfeit verification via QR codes.
 
 
 ![view](https://github.com/valentynvovchak/ApeInCorp/blob/main/view_ape_desktop.png?raw=true)
